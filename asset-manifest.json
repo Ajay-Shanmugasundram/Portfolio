@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.94772b91.css",
+    "main.js": "/Portfolio/static/js/main.07b9ddb2.js",
+    "static/media/AWScloudfoundation.png": "/Portfolio/static/media/AWScloudfoundation.ce9a5b5342988fa46a1f.png",
+    "static/media/UC-1bfac748-dc9c-4f34-92e4-95321be5b880.jpg": "/Portfolio/static/media/UC-1bfac748-dc9c-4f34-92e4-95321be5b880.254318f516f067b6c848.jpg",
+    "static/media/HackerRank.png": "/Portfolio/static/media/HackerRank.24ed7a6febbe94680b65.png",
+    "static/media/linkedinTestmanagement.png": "/Portfolio/static/media/linkedinTestmanagement.6af1a4d7911810b7d39d.png",
+    "static/media/memoji-happy-man-white-background-emoji_826801-6834.avif": "/Portfolio/static/media/memoji-happy-man-white-background-emoji_826801-6834.ed948f58ee660e063810.avif",
+    "index.html": "/Portfolio/index.html",
+    "main.94772b91.css.map": "/Portfolio/static/css/main.94772b91.css.map",
+    "main.07b9ddb2.js.map": "/Portfolio/static/js/main.07b9ddb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94772b91.css",
+    "static/js/main.07b9ddb2.js"
+  ]
+}
