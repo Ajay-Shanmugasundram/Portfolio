@@ -10,8 +10,8 @@ import { FaGithubSquare } from "react-icons/fa";
 function Contact() {
     return (
         <>
-            <div className="fs-2 fw-bold letterspacing d-flex justify-content-center   ">
-                <span className="border-bottom border-5 border-warning mb-4">
+            <div className="fs-2 fw-bold letterspacing d-flex justify-content-center  mb-5 ">
+                <span className="border-bottom border-5 border-warning ">
                     CONTACT
                 </span>
             </div>

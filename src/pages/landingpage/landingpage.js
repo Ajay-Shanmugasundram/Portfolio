@@ -1,10 +1,10 @@
-import React from 'react'
-import { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+import React from "react";
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
+import LanguageStats from "../../components/LanguageStats/languageStats";
+import { Col, Row } from "react-bootstrap";
 
 export default function LandingPage() {
-
-
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
@@ -13,7 +13,7 @@ export default function LandingPage() {
             typeSpeed: 50,
             backSpeed: 50,
             backDelay: 50,
-            loop: 220
+            loop: 220,
         });
 
         // Destropying
@@ -23,13 +23,32 @@ export default function LandingPage() {
     }, []);
 
     return (
-        <div style={{ height: "100vh", paddingTop: "21em", paddingLeft: "5em", fontWeight: "900" }}>
+        <>
+            <Row>
 
-            <span className='  fs-1 mb-6 text-left border-bottom border-5  letterspacing border-warning'>
-                AJAY SHANMUGASUNDRAM
+                <Col>
+                    <div
+                        style={{
+                            height: "100vh",
+                            paddingTop: "21em",
+                            paddingLeft: "5em",
+                            fontWeight: "900",
+                        }}
+                    >
+                        <span className="  fs-1 mb-6 text-left border-bottom border-5  letterspacing border-warning">
+                            AJAY SHANMUGASUNDRAM
             </span>
-            <div className=' letterspacing text-left fs-2' ref={el}></div>
-        </div>)
+                        <div className=" letterspacing text-left fs-2" ref={el}></div>
+                    </div>
+                </Col>
+                <Col md={3} sm={12} lg={3} xl={3}>
+                    <div>
+                        <LanguageStats></LanguageStats>
+                    </div>
+                </Col>
+
+            </Row>
+
+        </>
+    );
 }
-
-

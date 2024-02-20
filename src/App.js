@@ -5,8 +5,8 @@ import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
 import Skills from "./pages/skills/skills";
 import Certifications from "./pages/certifications/certifications";
-import Projects from "./pages/projects/projects";
-import Blogs from "./pages/blogs/blogs";
+import Awards from "./pages/awards/awards";
+// import Blogs from "./pages/blogs/blogs";
 import LandingPage from "./pages/landingpage/landingpage";
 import { Container } from "react-bootstrap";
 
@@ -22,6 +22,26 @@ function App() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+        (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+        (e.ctrlKey && e.key === 'U')
+      ) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
 
   return (
     <div className="App fs-5" id={theme}>
@@ -39,11 +59,11 @@ function App() {
         <section className="section" id="skills">
           <Skills></Skills>
         </section>
-        {/* <section className="section" id="projects">
-          <Projects></Projects>
-        </section> */}
         <section className="section" id="certifications">
           <Certifications></Certifications>
+        </section>
+        <section className="section" id="awards">
+          <Awards></Awards>
         </section>
         {/* <section className="section" id="blogs">
           <Blogs></Blogs>
