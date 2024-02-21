@@ -16,7 +16,7 @@ export default function Projects() {
                             <li>
                                 <div class="timeline_content">
                                     <span>2023</span>
-                                    <h4>Top Performer Q3</h4>
+                                    <h4>Cream of Talents "Achievers" - Q3</h4>
                                     <p className='fs-6 fw-bold'>In the third quarter, I proudly received recognition as a Top Performer, exemplifying excellence in my endeavors. These awards stand as a testament to my dedication, skill, and ability to consistently surpass expectations. They underscore my commitment to continuous growth and achievement within the designated timeframe</p>
                                 </div>
                             </li>
@@ -37,7 +37,7 @@ export default function Projects() {
                             <li>
                                 <div class="timeline_content">
                                     <span>2023</span>
-                                    <h4>Top Performer Q4</h4>
+                                    <h4>Cream of Talents "Achievers" - Q4</h4>
                                     <p className='fs-6 fw-bold'>In Q4, I continued to shine brightly, earning further accolades as a testament to my unwavering commitment to excellence. These recognitions reflect my consistent dedication, innovative contributions, and remarkable performance throughout the quarter. They serve as a testament to my ability to thrive and exceed expectations, reinforcing my reputation as a top performer in my field</p>
                                 </div>
                             </li>

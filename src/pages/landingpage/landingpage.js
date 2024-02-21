@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import LanguageStats from "../../components/LanguageStats/languageStats";
+import NumberCounter from "../../components/Number/number";
 import { Col, Row } from "react-bootstrap";
 
 export default function LandingPage() {
@@ -16,7 +17,7 @@ export default function LandingPage() {
             loop: 220,
         });
 
-        // Destropying
+        // Destroying
         return () => {
             typed.destroy();
         };
@@ -25,12 +26,11 @@ export default function LandingPage() {
     return (
         <>
             <Row>
-
                 <Col>
                     <div
                         style={{
                             height: "100vh",
-                            paddingTop: "21em",
+                            paddingTop: "15em",
                             paddingLeft: "5em",
                             fontWeight: "900",
                         }}
@@ -41,14 +41,46 @@ export default function LandingPage() {
                         <div className=" letterspacing text-left fs-2" ref={el}></div>
                     </div>
                 </Col>
-                <Col md={3} sm={12} lg={3} xl={3}>
-                    <div>
+                <Col md={4} sm={12} lg={4} xl={4}>
+                    <Row>
+
+                        <Row className="w-100">
+                            <Col md={6} sm={12} lg={6} xl={6}>
+                                <NumberCounter
+                                    intervalspeed={200}
+                                    number={10}
+                                    content={"Project"}
+                                ></NumberCounter>
+                            </Col>
+                            <Col md={6} sm={12} lg={6} xl={6}>
+                                <NumberCounter
+                                    intervalspeed={400}
+                                    number={5}
+                                    content={"Hours of Coding"}
+                                ></NumberCounter>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md={6} sm={12} lg={6} xl={6}>
+                                <NumberCounter
+                                    intervalspeed={100}
+                                    number={20}
+                                    content={"Skills"}
+                                ></NumberCounter>
+                            </Col>
+                            <Col md={6} sm={12} lg={6} xl={6}>
+                                <NumberCounter
+                                    intervalspeed={1000}
+                                    number={2}
+                                    content={"Experience"}
+                                ></NumberCounter>
+                            </Col>
+                        </Row>
+
                         <LanguageStats></LanguageStats>
-                    </div>
+                    </Row>
                 </Col>
-
             </Row>
-
         </>
     );
 }
