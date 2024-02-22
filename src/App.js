@@ -49,8 +49,8 @@ function App() {
         setTheme={setTheme}
         scrollToSection={scrollToSection}
       ></Navigation>
-      <Container>
-        <section id="home">
+      <>
+        <section className="section" id="home">
           <LandingPage></LandingPage>
         </section>
         <section className="section" id="about">
@@ -71,7 +71,7 @@ function App() {
         <section className="section" id="contact">
           <Contact></Contact>
         </section>
-      </Container>
+      </>
     </div>
   );
 }

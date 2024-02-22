@@ -25,7 +25,7 @@ function Navigation({ scrollToSection, setTheme }) {
     }, []);
 
     return (
-        <Navbar expand="lg" className='border-warning border-bottom'>
+        <Navbar expand="lg" className='border-warning border-bottom bg-black text-white' style={{ position: "sticky", top: '0',zIndex:'2' }}>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <div className="d-flex flex-row gap-4 ms-auto">
