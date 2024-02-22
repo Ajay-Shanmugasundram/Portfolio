@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 .App {
-  height: 100%;
+  /* height: 100%; */
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #light {
@@ -15,7 +19,8 @@
   color: white;
 }
 .section {
-  padding: 5em 10em 5em 10em;
+    scroll-snap-align: center;
+      padding: 5em 10em 5em 10em;
 }
 
 .letterspacing {
@@ -28,13 +33,6 @@
 
 .colorhover:hover {
   color: #ff9807;
-}
-.sticky-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  /* Adjust as needed */
 }
 
 
@@ -58,7 +56,7 @@ ul.timeline-list:before {
   content: "";
   width: 2px;
   height: 100%;
-  background-color: #ff3636;
+  background-color: #FFC007;
   left: 50%;
   top: 0;
   -webkit-transform: translateX(-50%);
@@ -72,7 +70,7 @@ ul.timeline-list li {
 }
 
 .timeline_content {
-  border: 2px solid #ff3636;
+  border: 2px solid #FFC007;
 }
 
 ul.timeline-list li .timeline_content {
@@ -97,7 +95,7 @@ ul.timeline-list li:before {
   content: "";
   width: 25px;
   height: 25px;
-  background-color: #ff3636;
+  background-color: #FFC007;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);

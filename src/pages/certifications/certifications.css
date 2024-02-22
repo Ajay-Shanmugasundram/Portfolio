@@ -1,0 +1,50 @@
+.portfolio {
+    position: relative;
+
+    .progressStats {
+        text-align: center;
+
+        .progressStatsBar {
+            height: 10px;
+            background-color: white;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .wrapper {
+
+
+            .textContainer {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                h2 {
+                    font-size: 72px;
+                }
+
+                p {
+                    color: gray;
+                    font-size: 20px;
+                }
+
+                button {
+                    background-color: orange;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
