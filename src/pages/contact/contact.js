@@ -1,4 +1,4 @@
-import { Form, FloatingLabel, Row, Col, Button } from "react-bootstrap";
+import {  Row, Col, } from "react-bootstrap";
 import { BsLinkedin } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiBuymeacoffee } from "react-icons/si";
@@ -16,44 +16,6 @@ function Contact() {
                 </span>
             </div>
             <Row className="fs-6">
-                <Col>
-                    <Form>
-                        <FloatingLabel
-                            controlId="floatingInput"
-                            label="Email address"
-                            className="mb-3"
-                        >
-                            <Form.Control
-                                size="sm"
-                                type="email"
-                                placeholder="name@example.com"
-                            />
-                        </FloatingLabel>
-                        <FloatingLabel
-                            controlId="floatingName"
-                            label="Name"
-                            className="mb-3"
-                        >
-                            <Form.Control type="email" placeholder="name@example.com" />
-                        </FloatingLabel>
-                        <FloatingLabel
-                            controlId="floatingTextarea2"
-                            label="Message"
-                            className="mb-3"
-                        >
-                            <Form.Control
-                                as="textarea"
-                                placeholder="Leave a comment here"
-                                style={{ height: "18em" }}
-                            />
-                        </FloatingLabel>
-                        <div className="d-grid ">
-                            <Button variant="warning" className="font-bold" type="submit">
-                                SEND
-                            </Button>
-                        </div>
-                    </Form>
-                </Col>
                 <Col>
                     <Row className="mb-3">
                         <Col className="fw-bold ">
